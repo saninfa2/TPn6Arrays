@@ -8,13 +8,13 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         //-----------------------------------EJERCICIO 1--------------------------------------------
 
-        /*System.out.println("Media de números");
+        System.out.println("Media de números");
 
        //Declaración e inicialización de variables
         int [] arrayNumbers = new int[10];
-        */
+
         int counterNegative = 0, counterPositive = 0;
-        /*
+
         int mediaNegative = 0, mediaPositive = 0;
 
         //Primero pedimos el ingreso de los 10 números
@@ -41,10 +41,10 @@ public class Main {
 
         //Mostramos los resultados
         System.out.println("Media de números positivos: " + mediaPositive);
-        System.out.println("Media de números negativos: " + mediaNegative);*/
+        System.out.println("Media de números negativos: " + mediaNegative);
 
         //-----------------------------------EJERCICIO 2--------------------------------------------
-       /* System.out.println("Media de números en posición par");
+        System.out.println("Media de números en posición par");
 
         //Declaración e inicialización de variables
         double mediaPair = 0, counterPair= 0;
@@ -54,8 +54,8 @@ public class Main {
             System.out.println("Ingrese 10 números enteros positivos y/o negativos: ");
             int number = scan.nextInt();
             arrayNumbers[i] = number;
-        }*/
-/*
+        }
+
         //Recorremos el array y separamos los números que se almacenen en lugares pares
         for(int i = 0; i <= 9; i++){
             if(i%2==0){
@@ -65,21 +65,14 @@ public class Main {
         }
 
         //Calculamos media
-        mediaPair /= counterPair;*/
+        mediaPair /= counterPair;
 
-        /*//Mostramos los resultados
-        System.out.println("Media de números almacenados en posiciones pares: " + mediaPair);*/
+        //Mostramos los resultados
+        System.out.println("Media de números almacenados en posiciones pares: " + mediaPair);
+
         //-----------------------------------EJERCICIO 3--------------------------------------------
-        /* Programa que lee por teclado la nota de los alumnos de una clase y calcula la nota media del grupo. 
-        También muestra los alumnos con notas superiores a la media. El número de alumnos se lee por teclado.
-        Este programa utiliza un array de elementos de tipo double que contendrá las notas de los alumnos.
-        El tamaño del array será el número de alumnos de la clase, por lo tanto primero se pedirá por teclado el
-        número de alumnos y a continuación se creará el array.
-        Se realizan 3 recorridos sobre el array, el primero para asignar a cada elemento las notas introducidas
-        por teclado, el segundo para sumarlas y calcular la media y el tercero para mostrar los alumnos con
-        notas superiores a la media.*/
 
-       /* System.out.println("Notas de alumnos");
+        System.out.println("Notas de alumnos");
 
         //Pedimos la cantidad de alumnos
         System.out.println("Ingrese la cantidad de alumnos a procesar: ");
@@ -110,16 +103,13 @@ public class Main {
             }
         }
 
-       */
-
-        //Programa que crea un array de 20 elementos llamado Pares y guarde los 20 primeros
-        //números pares. Mostrar por pantalla el contenido del array creado.
-/*
+        //-----------------------------------EJERCICIO 4--------------------------------------------
         System.out.println("Primeros 20 numeros pares");
 
         //Defición e inicialización de variables
         int [] Pares = new int[20];
-        int i, j = 0;
+        int j = 0;
+
 
         //Primer for: llenado del array
         for(i=0; i<=19; i++){
@@ -137,17 +127,13 @@ public class Main {
                 System.out.print(Pares[i] + ", ");
             }
 
-        } */
-/*
-        //Programa Java que guarda en un array 10 números enteros que se leen por teclado.
-        //A continuación se recorre el array y calcula cuántos números son positivos, cuántos negativos y
-        //cuántos ceros.
+        }
 
+        //-----------------------------------EJERCICIO 5--------------------------------------------
         System.out.println("¿Positivo, negativo o cero?");
 
         //Definición e inicialización de variables
         int [] intNumber = new int[10];
-        int i=0;
         int counterZero = 0;
         counterPositive = 0;
         counterNegative = 0;
@@ -173,16 +159,15 @@ public class Main {
         System.out.println("Números positivos: " + counterPositive);
         System.out.println("Números negativos: " + counterNegative);
         System.out.println("Cantidad de 0: " + counterZero);
-        */
 
-        //Programa Java que llene un array con 10 números enteros que se leen por teclado.
-  /*      //A continuación calcula y muestra la media de los valores positivos y la de los
-        //valores negativos del array.
+
+        //-----------------------------------EJERCICIO 6--------------------------------------------
         System.out.println("Media de números positivos y negativos");
 
         //Definición e inicialización de variables
         int [] intNumbers = new int[10];
-       */ int i=0, mediaPositive = 0, mediaNegative = 0; /*
+        mediaPositive = 0;
+        mediaNegative = 0;
         counterPositive = 0;
         counterNegative = 0;
 
@@ -216,12 +201,9 @@ public class Main {
         } else {
             System.out.println("No se ingresaron números para promediar");
         }
-        */
 
-        //Programa Java para leer la altura de N personas y calcular la altura media. Calcular cuántas personas tienen
-        //una altura superior a la media y cuántas tienen una altura inferior a la media. El valor de N se pide por
-        //teclado y debe ser entero positivo.
-      /*  System.out.println("Alturas, medias y otras cosas");
+        //-----------------------------------EJERCICIO 7--------------------------------------------
+        System.out.println("Alturas, medias y otras cosas");
         System.out.println("Ingrese la cantidad de personas a procesar:");
         int N;
         do{
@@ -252,23 +234,10 @@ public class Main {
             }
         }
 
-       */
-
-        //Programa Java que lea el nombre y el sueldo de 20 empleados y muestre el nombre y el sueldo del
-        //empleado que más gana.
-        //Para hacerlo utilizaremos dos arrays:
-        //Un array de String para los nombres de los empleados
-        //Un array de tipo double para los sueldos de cada empleado.
-        //
-        //Al mismo tiempo que leemos los datos de los empleados iremos comprobando cuál es el que tiene el mayor sueldo.
-        //Para ello tomamos el sueldo del primer empleado que se lee como mayor sueldo y después vamos comprobando el
-        //resto de sueldos. Cuando encontramos alguno mayor que el mayor actual este sueldo se convierte en el nuevo mayor.
-        //
-        //En general para calcular el mayor de una serie de números tomamos el primero como mayor y después comparamos
-        //el resto de números.
+        //-----------------------------------EJERCICIO 8--------------------------------------------
         System.out.println("Mayor sueldo");
 
-       /* // Definir arrays para nombres y sueldos
+        // Definir arrays para nombres y sueldos
         String[] names = new String[20];
         double[] salaries = new double[20];
         i = 0;
@@ -296,7 +265,6 @@ public class Main {
         // Mostrar el empleado con el mayor sueldo
         System.out.println("El empleado con el mayor sueldo es: " + employedHigherSalary);
         System.out.println("Su sueldo es: " + higherSalary);
-*/
 
 
     }
